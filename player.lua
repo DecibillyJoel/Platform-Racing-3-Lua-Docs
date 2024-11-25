@@ -534,6 +534,8 @@ end
 --- 
 --- * !sap: (***int***) the amount of health to heal the player by upon damaging an enemy. *[ Default 0｜Min -9999｜Max 99999 ]*
 --- 
+--- * !slashes (***int***) the amount of sword slashes created by each use of the item. *[ Default 1|Min 0|Max 99999 ]*
+--- 
 --- * !stamprot: (***float***) the rotation of the item graphic. Visual only. *[ Default 0｜Min -360｜Max 360 ]. Displayed as **rotation** under stamp settings in block editor*
 --- 
 --- * !useanimation: (***bool***) specifies whether the item's use animation gets played upon a use. Only applies for custom textures. Visual only. *[ Default false ]. Displayed as **item animation** in block editor*
