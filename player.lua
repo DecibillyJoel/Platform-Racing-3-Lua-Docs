@@ -189,9 +189,9 @@ end
 --- @tparam function listener The listener to be called every time an iteration is completed.
 --- @treturn timer The created timer object.
 --- @usage startElapsedTicks = tolua(game.elapsedTicks)
----- fpsCountTimer = player.newRealTimer(1000 * 6, -1, function()
-----   -- Reports average fps over a 6 second interval
-----   player.chat(tostring((tolua(game.elapsedTicks) - startElapsedTicks) / (1000 * 6)))
+---- tpsCountTimer = player.newRealTimer(1000 * 6, -1, function()
+----   -- Reports average ticks per second over a 6 second interval
+----   player.chat(tostring((tolua(game.elapsedTicks) - startElapsedTicks) / 6))
 ----   startElapsedTicks = tolua(game.elapsedTicks)
 ---- end)
 function newRealTimer(interval, maxCount, listener)
